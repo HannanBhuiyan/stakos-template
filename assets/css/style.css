@@ -103,7 +103,7 @@ a.button_x {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #232527;
+    background: var(--secondary-color);
     padding: 18px;
 }
 .mobile-menu .header-item .header-item-right span i {
@@ -124,7 +124,7 @@ a.button_x {
     top: 0;
     left: 0;
     z-index: 99;
-    background: #fff;
+    background: var(--secondary-color);
     width: 100%;
     transform: scaleY(0);
     transform-origin: top;
@@ -142,9 +142,8 @@ a.button_x {
     padding-top: 120px;
 }
 .mobile-menu .header-bottom .header-menu ul li{
-    list-style: none;
-    border-bottom: 1px solid var(--primary-color);
-    padding: 18px 0px;
+    list-style: none; 
+    padding: 10px 0px;
     margin: 0px 25px;
 }
 .mobile-menu .header-bottom .header-menu ul li:last-child {
@@ -172,7 +171,7 @@ a.button_x {
 .mobile-menu .header-bottom .header-menu ul li a {
     font-size: 18px;
     font-weight: 500;
-    color: black;
+    color: #fff;
     text-decoration: none;
     display: block;
 }
@@ -181,17 +180,51 @@ a.button_x {
     right: 25px;
     font-size: 15px;
 }
+.menu_right_btn a {
+    background: #86E5FF;
+    padding: 12px 52px;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.mobile_footer_logo img {
+    margin: 15px 0px;
+}
 /* MOBILE MENU SECTION CSS END HERE */
 
  /* MAIN BODY SECTION FOR DASHBOARD */
 .main_body {
-    /* background-image: url('../images/bg.png'); */
-    background-color: #000;
+    background-image: url('../images/BG.mp4');
+    /* background-color: #000; */
     padding: 50px 0px;
 }
 .main_body_wrapper {
     padding: 0px 78px;
 }
+.video-container {
+    
+}
+
+/* Styling the video */
+.video-container video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%; 
+  }
+  
 
 .card-top {
     background: var(--secondary-color);
@@ -216,13 +249,15 @@ a.button_x {
 .card_status {
     background: var(--secondary-color);
     padding: 20px;
-    height: 300px;
+    height: 306px;
 }
 .card_status ul {
     margin: 0;
     padding: 0;
 }
-
+.update_img img {
+    width: 100%;
+}
 .card_status ul li {
     list-style: none;
     color: #fff;
@@ -260,6 +295,7 @@ p.para_two {
     color: #fff;
     padding: 25px;
     margin-bottom: 20px;
+    background-color: var(--secondary-color);
 }
 .ann_sub-title a {
     color: var(--primary-color);
@@ -284,11 +320,15 @@ p.para_two {
     padding: 7px;
     margin-top: 14px;
 }
+.download_btn {
+    width: 175px;
+}
 .view_btn a {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     color: #86E5FF;
+    padding: 14px 4px;
 }
 .view_btn a span {
     padding-left: 10px;

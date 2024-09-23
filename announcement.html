@@ -19,65 +19,75 @@
 </head>
 <body>
 
-    <!-- preloader start here -->
-    <div class="preloader">
-        <div class="preloader-inner">
-             <div class="preloader-icon">
-                  <span></span>
-                  <span></span>
-             </div>
-        </div>
-   </div>
-   <!-- preloader ending here -->
+    <!-- background video section -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/images/BG.mp4" type="video/mp4">
+        </video> 
+    </div>
+    <!-- background video section -->
 
-    <!-- menu section start here  -->
-    <div class="main_menu">
-        <div class="container"> 
-            <div class="menu_inner">
-                <div class="menu_left"> 
-                    <div class="menu_item">
+    <div class="content">
+
+        <!-- preloader start here -->
+        <div class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- preloader ending here -->
+
+        <!-- menu section start here  -->
+        <div class="main_menu">
+            <div class="container"> 
+                <div class="menu_inner">
+                    <div class="menu_left"> 
+                        <div class="menu_item">
+                            <ul>
+                                <li class="logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="transactions.html">Transactions</a>
+                                </li>
+                                <li>
+                                    <a href="friend-list.html">Friend Lists</a>
+                                </li>
+                                <li>
+                                    <a href="profile.html">Profile</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="menu_right">
                         <ul>
-                            <li class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo.png" alt="logo">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menu-active " href="index.html">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="service.html">Transactions</a>
-                            </li>
-                            <li>
-                                <a href="casi-studio.html">Friend Lists</a>
-                            </li>
-                            <li>
-                                <a href="contact.html">Profile</a>
-                            </li> 
+                            <li><a href="#">Disconnect</a></li>
+                            <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button_x common_style" href="#">0x21X..12Xs</a></li>
+                            <li><a href="#"><img src="assets/images/qr-code.png" alt="qr-code"></a></li>
+                            <div class="lan">
+                                <span><img src="assets/images/global.png" alt=""></span>
+                                <select name="#" id="">
+                                    <option value="">En</option>
+                                    <option value="">Fr</option>
+                                </select>
+                            </div>
                         </ul>
                     </div>
-                </div> 
-                <div class="menu_right">
-                    <ul>
-                        <li><a href="#">Disconnect</a></li>
-                        <li><a class="button_x common_style" href="#">0x21X..12Xs</a></li>
-                        <li><a href="#"><img src="assets/images/qr-code.png" alt="qr-code"></a></li>
-                        <div class="lan">
-                            <span><img src="assets/images/global.png" alt=""></span>
-                            <select name="#" id="">
-                                <option value="">En</option>
-                                <option value="">Fr</option>
-                            </select>
-                        </div>
-                    </ul>
-                </div>
-            </div>  
-        </div> 
-    </div>
-    <!-- menu section end here -->
+                </div>  
+            </div> 
+        </div>
+        <!-- menu section end here -->
 
-    <!-- mobile menu -->
-    <div class="mobile-menu">
+        <!-- mobile menu -->
+        <div class="mobile-menu">
             <div class="header-top">
                 <div class="header-item">
                     <div class="header-item-left">
@@ -85,11 +95,21 @@
                             <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
                         </div>
                     </div>
-                    <div class="header-item-right">
-                    <span>
-                        <i class="fa-solid fa-xmark"></i>
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </span>
+                    <div class="header-item-right d-flex align-items-center">
+                        <div class="mobile_btn">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button_x common_style" href="#">0x21X..12Xs</a> 
+                        </div>
+                        <div class="lan"> 
+                            <span><img src="assets/images/global.png" alt=""></span>
+                            <select name="#" id="">
+                                <option value="">En</option>
+                                <option value="">Fr</option>
+                            </select>
+                        </div>
+                        <span>
+                            <i class="fa-solid fa-xmark"></i>
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -97,124 +117,135 @@
                 <div class="header-menu">
                     <ul>
                         <li>
-                            <a class="menu-active" href="#">Home</a>
+                            <a href="#">Dashboard</a>
                         </li>
                         <li>
-                            <a href="service.html">Servizi</a>
+                            <a href="transactions.html">Transactions</a>
                         </li>
                         <li>
-                            <a href="casi-studio.html">Casi studio</a>
+                            <a href="friend-list.html">Friend Lists</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contatti</a>
+                            <a href="profile.html">Profile</a>
                         </li> 
                     </ul>
-                    <div class="menu_right_btn text-center mt-5">
-                        <a href="#">Collaboriamo assieme</a>
+                    <div class="text-center">
+                        <div class="mobile_qr mt-5">
+                            <img src="assets/images/mobile_logo.png" alt="">
+                        </div>
+                        <div class="menu_right_btn text-center mt-5">
+                            <a href="#">DISCONNECT</a>
+                        </div>
+                        <div class="mobile_footer_logo">
+                            <img src="assets/images/logo.png" alt="image">
+                            <p>&#169; 2024 X0X SQUARE All rights reserved.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-    <!-- mobile menu -->
+        </div>
+        <!-- mobile menu -->
 
-    <!-- main body section -->
-    <div class="main_body">
-        <div class="container">
-            <div class="main_body_wrapper"> 
-                <div class="section_body">
-                    <div class="ann_sub-title">
-                        <a href="#">Announcement:</a>
-                    </div> 
-                    <div class="section_inner">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="announcement_card common_style">
-                                    <div class="ann_img">
-                                        <img src="assets/images/annous-img.png" alt="ann-img">
-                                    </div>
-                                    <div class="ann-content">
-                                        <p>Date: 01/10/2024 </p>
-                                        <p>Title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-                                        <p>Descriptions: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-                                            Aenean commodo ligula eget dolor. Aenean massa. </p>
-                                        <div class="view_btn" >
-                                            <a href="#">
-                                                <img src="assets/images/view.png" alt="view">
-                                                <span>View</span>
-                                            </a>                                       
+        <!-- main body section -->
+        <div class="main_body">
+            <div class="container">
+                <div class="main_body_wrapper"> 
+                    <div class="section_body">
+                        <div class="ann_sub-title">
+                            <a href="#">Announcement:</a>
+                        </div> 
+                        <div class="section_inner">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="announcement_card common_style">
+                                        <div class="ann_img">
+                                            <img src="assets/images/annous-img.png" alt="ann-img">
+                                        </div>
+                                        <div class="ann-content">
+                                            <p>Date: 01/10/2024 </p>
+                                            <p>Title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                                            <p>Descriptions: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+                                                Aenean commodo ligula eget dolor. Aenean massa. </p>
+                                            <div class="view_btn" >
+                                                <a href="#">
+                                                    <img src="assets/images/view.png" alt="view">
+                                                    <span>View</span>
+                                                </a>                                       
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="announcement_card common_style">
-                                    <div class="ann_img">
-                                        <img src="assets/images/annous-img.png" alt="ann-img">
-                                    </div>
-                                    <div class="ann-content">
-                                        <p>Date: 01/10/2024 </p>
-                                        <p>Title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-                                        <p>Descriptions: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-                                            Aenean commodo ligula eget dolor. Aenean massa. </p>
-                                        <div class="view_btn" >
-                                            <a href="#">
-                                                <img src="assets/images/view.png" alt="view">
-                                                <span>View</span>
-                                            </a>                                       
+                                <div class="col-12">
+                                    <div class="announcement_card common_style">
+                                        <div class="ann_img">
+                                            <img src="assets/images/annous-img.png" alt="ann-img">
+                                        </div>
+                                        <div class="ann-content">
+                                            <p>Date: 01/10/2024 </p>
+                                            <p>Title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                                            <p>Descriptions: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+                                                Aenean commodo ligula eget dolor. Aenean massa. </p>
+                                            <div class="view_btn" >
+                                                <a href="#">
+                                                    <img src="assets/images/view.png" alt="view">
+                                                    <span>View</span>
+                                                </a>                                       
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="announcement_card common_style">
-                                    <div class="ann_img">
-                                        <img src="assets/images/annous-img.png" alt="ann-img">
-                                    </div>
-                                    <div class="ann-content">
-                                        <p>Date: 01/10/2024 </p>
-                                        <p>Title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-                                        <p>Descriptions: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
-                                            Aenean commodo ligula eget dolor. Aenean massa. </p>
-                                        <div class="view_btn" >
-                                            <a href="#">
-                                                <img src="assets/images/view.png" alt="view">
-                                                <span>View</span>
-                                            </a>                                       
+                                <div class="col-12">
+                                    <div class="announcement_card common_style">
+                                        <div class="ann_img">
+                                            <img src="assets/images/annous-img.png" alt="ann-img">
+                                        </div>
+                                        <div class="ann-content">
+                                            <p>Date: 01/10/2024 </p>
+                                            <p>Title: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                                            <p>Descriptions: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  
+                                                Aenean commodo ligula eget dolor. Aenean massa. </p>
+                                            <div class="view_btn" >
+                                                <a href="#">
+                                                    <img src="assets/images/view.png" alt="view">
+                                                    <span>View</span>
+                                                </a>                                       
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="section_pagination">
-                        <div class="pagi_left">
-                            <span>Page 1/10</span>
-                        </div>
-                        <div class="pagi_right">
-                            <div class="pagi_back">
-                                <a href="#">Back</a>
+                        <div class="section_pagination">
+                            <div class="pagi_left">
+                                <span>Page 1/10</span>
                             </div>
-                            <div class="pagi_next">
-                                <a href="#">Next</a>
+                            <div class="pagi_right">
+                                <div class="pagi_back">
+                                    <a href="#">Back</a>
+                                </div>
+                                <div class="pagi_next">
+                                    <a href="#">Next</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- main body section -->
+        <!-- main body section -->
 
-    <!-- footer section  -->
-    <div class="footer_section">
-        <div class="container">
-            <div class="footer_inner">
-                <img src="assets/images/logo.png" alt="logo">
-                <p>&#169; 2024 STAKOS All rights reserved.</p>
+        <!-- footer section  -->
+        <div class="footer_section">
+            <div class="container">
+                <div class="footer_inner">
+                    <img src="assets/images/logo.png" alt="logo">
+                    <p>&#169; 2024 STAKOS All rights reserved.</p>
+                </div>
             </div>
         </div>
+        <!-- footer section -->
     </div>
-    <!-- footer section -->
+
 
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/fontawesome.min.js"></script>
