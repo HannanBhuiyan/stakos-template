@@ -83,7 +83,18 @@
         margin-left: 8px;
     }
     
-    
+    .transaction_table .list_item span {
+        font-size: 11px;
+    }
+    .description_list_item {
+        width: 111px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .search_box input[type="text"] {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:880px) {
@@ -104,6 +115,9 @@
     .pagi_left span {
         font-size: 15px; 
     }
+    p.pro_txt {
+        word-break: break-all;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -115,6 +129,12 @@
     }
     .ann-content p {
         font-size: 14px;
+    }
+    .ann_sub-title a {
+        width: 100%;
+    }
+    .search_box {
+        width: 100%;
     }
 }
 

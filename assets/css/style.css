@@ -197,7 +197,7 @@ a.button_x {
 
  /* MAIN BODY SECTION FOR DASHBOARD */
 .main_body {
-    background-image: url('../images/BG.mp4');
+    /* background-image: url('../images/BG.mp4'); */
     /* background-color: #000; */
     padding: 50px 0px;
 }
@@ -428,6 +428,7 @@ p.pro_txt {
 
 .profile_card {
     padding: 15px 20px;
+    background-color: var(--secondary-color);
 }
 /* Profile */
 
@@ -449,6 +450,7 @@ p.pro_txt {
 
 .friend_list_card {
     padding: 15px 20px;
+    background-color: var(--secondary-color);
 }
 .view_btn.fnd-btn {
     width: 100px;
