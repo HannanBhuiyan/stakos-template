@@ -1,0 +1,549 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Poppins", sans-serif;
+} 
+:root {
+    --primary-color: #86E5FF; 
+    --secondary-color: #1C2033;
+}
+
+.common_style {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(134,229,255, 0.65);
+}
+
+
+
+/* HEADER SECTION CSS START HERE */
+
+.main_menu {
+    background: #1C2133;
+    padding: 13px 0px;
+}
+
+.menu_inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_item ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_item ul li {
+    list-style: none;
+}
+
+.menu_item ul li a {
+    padding: 0px 22px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+li.logo {
+    margin-right: 35px;
+}
+a.menu-active { 
+    color: var(--primary-color) !important; 
+}
+.menu_right ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0
+}
+.menu_right ul li {
+    list-style: none;
+    margin-left: 20px;
+    display: inline-block;
+}
+.menu_right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu_right ul li:nth-child(1) a {
+    font-weight: 700;
+}
+a.button_x { 
+    padding: 8px 27px; 
+}
+.lan {
+    margin-left: 20px;
+}
+.lan select {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+.lan select option {
+    background: #000;
+    outline: none;
+}
+
+/* MOBILE MENU SECTION CSS START HERE */
+.mobile-menu .header-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    
+}
+.mobile-menu .header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232527;
+    padding: 18px;
+}
+.mobile-menu .header-item .header-item-right span i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.mobile-menu .header-item .header-item-right span i.fa-solid.fa-xmark {
+    display: none;
+}
+.mobile-menu .header-item .header-item-right.hhhh span i {
+    display: none;
+}
+.mobile-menu .header-item .header-item-right.hhhh span i.fa-solid.fa-xmark {
+    display: block;
+}
+.mobile-menu .header-bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 20px;
+    padding-bottom: 60px;
+    transition: all 0.3s ease;
+}
+.mobile-menu .header-bottom.open {
+    transform: scaleY(1);
+}
+.mobile-menu .header-bottom .header-menu > ul {
+    padding: 0;
+    padding-top: 120px;
+}
+.mobile-menu .header-bottom .header-menu ul li{
+    list-style: none;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 18px 0px;
+    margin: 0px 25px;
+}
+.mobile-menu .header-bottom .header-menu ul li:last-child {
+    border-bottom: none;
+}
+.mobile-menu .header-bottom .header-menu ul li.m  a {
+    position: relative; 
+}
+.mobile-menu .header-bottom .header-menu ul li.m > a::after {
+    top: 50%;
+    right: 0;
+    font-weight: 700;
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    transition:  all .3s ease-in-out;
+    position: absolute;
+}
+.mobile-menu .header-bottom .header-menu ul li ul {
+    display: none;
+    margin: 15px 0;
+}
+.mobile-menu .header-bottom .header-menu ul li.m > a {
+    position: relative;
+}
+.mobile-menu .header-bottom .header-menu ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.mobile-menu .header-bottom .header-menu ul li span i {
+    position: absolute;
+    right: 25px;
+    font-size: 15px;
+}
+/* MOBILE MENU SECTION CSS END HERE */
+
+ /* MAIN BODY SECTION FOR DASHBOARD */
+.main_body {
+    /* background-image: url('../images/bg.png'); */
+    background-color: #000;
+    padding: 50px 0px;
+}
+.main_body_wrapper {
+    padding: 0px 78px;
+}
+
+.card-top {
+    background: var(--secondary-color);
+    width: 100%;
+    height: 150px;
+    color: #fff; 
+    padding: 20px;
+}
+.card-title-top {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.cart_sub-title a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.cart_sub-title {
+    margin: 30px 0px 20px;
+}
+ 
+.card_status {
+    background: var(--secondary-color);
+    padding: 20px;
+    height: 300px;
+}
+.card_status ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card_status ul li {
+    list-style: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(252,252,252, 0.65);
+}
+.card_status ul li span {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.card_status_para p {
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+}
+p.para_one {
+    font-weight: 600;
+}
+p.para_two {
+    font-weight: 300;
+}
+ /* MAIN BODY SECTION FOR DASHBOARD */
+
+
+/* ANNOUNCEMENT PAGE */
+.announcement_card {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.ann_sub-title a {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.ann-content {
+    margin-left: 20px;
+}
+.ann-content p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+.view_btn {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(252,252,252, 0.65);
+    width: 143px;
+    text-align: center;
+    padding: 7px;
+    margin-top: 14px;
+}
+.view_btn a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #86E5FF;
+}
+.view_btn a span {
+    padding-left: 10px;
+}
+/* ANNOUNCEMENT PAGE */
+
+/* PAGINATION  */
+.section_pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.pagi_right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pagi_back a, .pagi_next a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(252,252,252, 0.65);
+    padding: 6px 17px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.pagi_back a {
+    margin-right: 10px;
+}
+.pagi_left span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* PAGINATION */
+
+/* MATERIALS */
+.pdf a {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+    margin-top: 14px;
+    display: inline-block;
+    color: var(--primary-color);
+}
+/* MATERIALS */
+
+/* Transaction */
+.table_item_section {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 16px;
+    color: var(--primary-color);
+    margin-top: 12px;
+    background-color: var(--secondary-color);
+}
+.transaction_table .col-12:nth-child(1) .table_item_section {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-decoration: underline;
+}
+.transaction_table {
+    margin-bottom: 20px;
+}
+.transaction_table .list_item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Transaction */
+/* Profile */ 
+.profile_body {
+    height: 100vh;
+}
+.profile_card p {
+    color: #fff;
+    margin: 0;
+    font-size: 20px;
+}
+
+p.pro_title {
+    font-weight: 600;
+}
+
+p.pro_txt {
+    font-weight: 300;
+}
+
+.profile_card {
+    padding: 15px 20px;
+}
+/* Profile */
+
+/* FRIEND LIST */
+.friend_list_card ul {
+    margin: 0;
+    padding: 0;
+}
+
+.friend_list_card ul li {
+    list-style: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.friend_list_card ul li span {
+    color: var(--primary-color);
+}
+
+.friend_list_card {
+    padding: 15px 20px;
+}
+.view_btn.fnd-btn {
+    width: 100px;
+    text-align: center;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+.view_btn.fnd-btn span {
+    font-size: 14px;
+    color: #fff;
+    padding-left: 4px;
+}
+.friend_section {
+    margin: 20px 0px;
+}
+.search_box input[type="text"] {
+    width: 450px;
+    background: #1C2033;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary-color);
+    outline: none;
+}
+.search_box ::placeholder {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 300; 
+}
+.search_box {
+    position: relative;
+}
+.search_box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+/* FRIEND LIST */
+
+/* REGISTRTION */
+input.regi_input {
+    color: var(--primary-color);
+}
+input.regi_input::placeholder , 
+.modal-input::placeholder {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 300;
+}
+.regi_btn, input.regi_input,
+.modal-input {
+    width: 100%;
+    background: #1C2033;
+    border: 1px solid #86E5FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+.regi_btn {
+    color: #fff;
+}
+.modal-input {
+    color: var(--primary-color);
+}
+/* .registration_page {
+    padding: 100px 0px;
+} */
+/* REGISTRATION */
+
+/* FOOTER SECTION */
+.footer_section {
+    background-color: var(--secondary-color);
+    padding: 20px 0px;
+}
+.footer_inner {
+    display: flex;
+    align-items: center;
+}
+.footer_inner p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    margin-left: 50px;
+    font-size: 15px;
+}
+/* FOOTER SECTION */
+
+/* MODAL */
+.modal-content {
+    background: #1C2033;
+}
+.modal-body {
+    text-align: center;
+    padding: 60px;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 10px;
+}
+.proceed span,
+.cancel span {
+    font-size: 24px;
+    padding-left: 10px;
+}
+.proceed {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    
+}
+.cancel {
+    color: #FF8686;
+    border: 2px solid #FF8686; 
+}
+.cancel, .proceed {
+    padding: 10px 23px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+p.modal-cus-title {
+    color: #86E5FF;
+    font-weight: 700;
+    font-size: 24px; 
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+/* MODAL */
